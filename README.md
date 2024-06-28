@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Click the Fox!
+
+A little game in the browser: the user should find a fox among other animal and click on the image. It necessarty to click the fox as many times as user can within 30 seconds.
+After 30 seconds of the game a user can see the total score and check the results
+
+## Main technologies/libraries of the app:
+
+- React
+- Typescript
+- Matherial UI
+- Jest
+- react-testing-library
+- react-hook-form
+- react-intl
+- react-router-dom
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Main approach
+
+The application is written in React and has 4 pages (_home, welcome, game and score_). For routing, the react-router-dom library was used. Since styles were not a priority according to the requirements, the MUI library was used to keep the application in a user-friendly state.
+
+Internationalization for English and Dutch languages was also added (it didn't take long). According to the requirements, integration tests have also been added for one of the pages in order to verify that the page loads normally, the components on it also work well and requests to the image API sends correctly. There were 2 image API's used in the app:
+
+- https://dog.ceo/api/breeds/image - for random dogs
+- https://randomfox.ca/floof - for random foxes
+
+The approach of background preloading of several sets of images during the _registration process_ for the game and during the _waiting time before game starts_ was used in the app. New images are also loaded _in the background every 3 rounds of the game_ so as not to freeze the user interface. React context was used for persisting data (not to overcoplicate it with redux and other stae management libraries)
+
+![Part 1](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/09d349d6-3fd9-4bc9-92d8-88c3cc671f16)
+![Part 2](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/ed3aa17e-a4a1-4145-ae4d-43c78274ff47)
+
+
+## **Available Scripts**
 
 In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Other available script
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
