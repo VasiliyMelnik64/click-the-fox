@@ -20,12 +20,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The application is written in React and has 4 pages (_home, welcome, game and score_). For routing, the react-router-dom library was used. Since styles were not a priority according to the requirements, the MUI library was used to keep the application in a user-friendly state.
 
-Internationalization for English and Dutch languages was also added (it didn't take long). According to the requirements, integration tests have also been added for one of the pages in order to verify that the page loads normally, the components on it also work well and requests to the image API sends correctly. There were 2 image API's used in the app:
+Internationalization for English and Dutch languages was also added (it didn't take long). According to the requirements, integration tests have also been added for one of the pages in order to verify that the page loads normally, the components on it also work well and requests to the image API sends correctly. I added the tests mainly as a sample on the application level. And of course - I usually add tests for each instance of the application, but as part of the task, due to time constraints, I didn't add tests to all places in the application (but, ideally, I do this)
+
+There were 2 image API's used in the app:
 
 - https://dog.ceo/api/breeds/image - for random dogs
 - https://randomfox.ca/floof - for random foxes
 
-The approach of background preloading of several sets of images during the _registration process_ for the game and during the _waiting time before game starts_ was used in the app. New images are also loaded _in the background every 3 rounds of the game_ so as not to freeze the user interface. React context was used for persisting data (not to overcoplicate it with redux and other stae management libraries)
+The approach of background preloading of several sets of images during the _registration process_ for the game and during the _waiting time before game starts_ was used in the app. New images are also loaded _in the background every 3 rounds of the game_ so as not to freeze the user interface. React context was used for persisting data (not to overcoplicate it with redux and other state management libraries)
 
 ![Part 1](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/3122780c-78ac-4007-b23b-b12c7a4a2e85)
 
