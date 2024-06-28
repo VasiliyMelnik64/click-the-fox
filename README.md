@@ -27,8 +27,9 @@ Internationalization for English and Dutch languages was also added (it didn't t
 
 The approach of background preloading of several sets of images during the _registration process_ for the game and during the _waiting time before game starts_ was used in the app. New images are also loaded _in the background every 3 rounds of the game_ so as not to freeze the user interface. React context was used for persisting data (not to overcoplicate it with redux and other stae management libraries)
 
-![Part 1](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/09d349d6-3fd9-4bc9-92d8-88c3cc671f16)
-![Part 2](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/ed3aa17e-a4a1-4145-ae4d-43c78274ff47)
+![Part 1](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/3122780c-78ac-4007-b23b-b12c7a4a2e85)
+
+![Part 2](https://github.com/VasiliyMelnik64/click-the-fox/assets/24418879/807c42e7-d9ff-4c81-b5c9-d206a0f2e1c3)
 
 
 ## **Available Scripts**
