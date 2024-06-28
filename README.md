@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The application is written in React and has 4 pages (_home, welcome, game and score_). For routing, the react-router-dom library was used. Since styles were not a priority according to the requirements, the MUI library was used to keep the application in a user-friendly state.
 
-Internationalization for English and Dutch languages was also added (it didn't take long). According to the requirements, integration tests have also been added for one of the pages in order to verify that the page loads normally, the components on it also work well and requests to the image API sends correctly. I added the tests mainly as a sample on the application level. And of course - I usually add tests for each instance of the application, but as part of the task, due to time constraints, I didn't add tests to all places in the application (but, ideally, I do this)
+Internationalization for English and Dutch languages was also added (it didn't take long). According to the requirements, integration tests have also been added for one of the pages in order to verify that the page loads normally, the components on it also work well and requests to the image API sends correctly. I added the tests mainly as a sample on the application level. And of course - I usually add tests for each instance of the application, but as part of the task, due to time limits and size of the application, I didn't add tests to all places in the application (but, ideally, I do this)
 
 There were 2 image API's used in the app:
 
